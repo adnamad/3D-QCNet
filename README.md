@@ -8,13 +8,14 @@ Output: An annotated csv file with predicted labels is generated and scans are a
 
 ### Install:
 
-<code>conda create --name 3dqc python=3.6 <br>
-conda activate 3dqc <br>
-pip install -r requirements.txt
-</code>
+
+    conda create --name 3dqc python=3.6
+    conda activate 3dqc
+    pip install -r requirements.txt
+
 
 
 
 ### Run : 
-`python 3d-qcnet.py --mode test`
+    python 3d-qcnet.py --mode test
 
