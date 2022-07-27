@@ -23,7 +23,7 @@ parser = argparse.ArgumentParser(description='3DQCNet Implementaiton')
 
 parser.add_argument("--mode",help ="To run Test model select 'test'; To run in Prediction mode select 'pred'",required=True)
 parser.add_argument("--thresh",help ="Value for probabaility threshold",default=0.5,type=int)
-parser.add_argument("--model_path",help ="The path for the model which will be loaded in 3D-QCNet",default='./models/3dqcnet_base-model_ep9.hdf5)
+parser.add_argument("--model_path",help ="The path for the model which will be loaded in 3D-QCNet",default='./models/3dqcnet_base-model_ep9.hdf5')
 
 args = parser.parse_args()
 
@@ -153,12 +153,12 @@ if mode == 'test':
     print("Recall - ", re)
     print("Precision - ", pr)
 
-#dest_folder = DESTN_FP
-#
-#if not os.path.exists(dest_folder+'bad/'):
-#    os.makedirs(dest_folder+'bad/')
-#if not os.path.exists(dest_folder+'good'):
-#    os.makedirs(dest_folder+'good/')
+
+
+if not os.path.exists(DESTN_FP+'bad/'):
+   os.makedirs(DESTN_FP+'bad/')
+if not os.path.exists(DESTN_FP+'good'):
+   os.makedirs(DESTN_FP+'good/')
 
 results = []
 
