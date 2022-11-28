@@ -1,6 +1,6 @@
 # 3D-QCNet
 
-Code for the 3D-QCNet Paper 
+Code for the 3D-QCNet Paper - https://arxiv.org/abs/2103.05285
 
 Input: Sample data that was part of the test used in the study is provided for users to evaluate the model.
 
